@@ -7,7 +7,7 @@ export class AppController {
   @Get()
   getHello(): string {
     this.logger.log('Handling GET request');
-    this.logger.error('hello world error')
+    this.logger.error('hello world error');
     return 'Hello World!';
   }
 }

@@ -39,7 +39,7 @@ export class CustomLoggerService implements LoggerService {
         `Sending log to Elasticsearch: level=${level}, message=${message}, context=${context}`,
       ); // ตรวจสอบการทำงานของ log
       await this.client.index({
-        index: 'nestjs-logs',
+        index: 'zookeeper-logs',
         document: {
           level,
           message,
